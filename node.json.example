@@ -1,0 +1,12 @@
+{
+  "user": {
+    "name": "deployer",
+    "password": "$1$9pQZa2UB$IX25jzt.2n3jU7CHiRDUj."
+
+  },
+  "rbenv": {
+    "install_prefix": "/usr/local"
+  },
+
+  "run_list": ["recipe[main]"]
+}
