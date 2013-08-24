@@ -2,7 +2,9 @@ package 'git-core'
 
 include_recipe "rbenv::default"
 include_recipe "rbenv::ruby_build"
-rbenv_ruby '2.0.0-p247'
+rbenv_ruby '2.0.0-p247' do
+  global true
+end
 
 user node[:user][:name] do
   password node[:user][:password]
