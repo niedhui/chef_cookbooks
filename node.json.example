@@ -5,8 +5,12 @@
 
   },
   "rbenv": {
-    "install_prefix": "/usr/local"
+    "install_prefix": "/usr/local",
+    "group_users": ["vagrant", "deployer"]
   },
 
-  "run_list": ["recipe[main]"]
+  "run_list": ["recipe[main]"],
+  "nginx": {
+    "version": "1.4.2"
+  }
 }
